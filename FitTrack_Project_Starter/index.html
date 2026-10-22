@@ -13,10 +13,11 @@
       <a class="brand" href="#dashboard" aria-label="FitTrack home"><span class="brand-mark">ƒ</span><span>FitTrack</span></a>
       <p class="side-label">WORKSPACE</p>
       <nav aria-label="Main navigation">
-        <a class="nav-link active" href="#dashboard">▦ <span>Dashboard</span></a>
-        <a class="nav-link" href="#workouts">▤ <span>Workouts</span></a>
-        <a class="nav-link" href="#goals">◎ <span>Fitness Goals</span></a>
-        <a class="nav-link" href="#history">◷ <span>Workout History</span></a>
+        <a class="nav-link active" href="#dashboard"> <span>Dashboard</span></a>
+        <a class="nav-link" href="#workouts"> <span>Workouts</span></a>
+        <a class="nav-link" href="#planner"><span>Weekly Planner</span></a>
+        <a class="nav-link" href="#goals"> <span>Fitness Goals</span></a>
+        <a class="nav-link" href="#history"> <span>Workout History</span></a>
       </nav>
       <div class="sidebar-note"><strong>Keep it up!</strong><p>Consistency builds stronger habits.</p></div>
     </aside>
@@ -53,7 +54,105 @@
           </form>
           <div id="goals-list" class="goals-list"><p class="muted">Loading goals…</p></div>
         </section>
+      </div> 
+      ```
+  <!-- Weekly Workout Planner -->
+  <section id="planner" class="panel planner-panel" aria-labelledby="planner-heading">
+    <div class="section-heading">
+      <div>
+        <h2 id="planner-heading">Weekly Workout Planner</h2>
+        <p class="muted">Plan your sessions, stay on schedule, and build consistency.</p>
       </div>
+      <button id="enable-notifications" class="button secondary" type="button">
+        Enable reminders
+      </button>
+    </div>
+
+    <form id="schedule-form" class="workout-form">
+      <div class="field">
+        <label for="scheduled-exercise">Exercise</label>
+        <input
+          id="scheduled-exercise"
+          name="exercise"
+          placeholder="e.g. Evening gym session"
+          maxlength="80"
+          required
+        >
+      </div>
+
+      <div class="field">
+        <label for="scheduled-category">Category</label>
+        <select id="scheduled-category" name="category" required>
+          <option value="Cardio">Cardio</option>
+          <option value="Strength">Strength</option>
+          <option value="Flexibility">Flexibility</option>
+          <option value="Sports">Sports</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="scheduled-date">Workout date</label>
+        <input id="scheduled-date" name="date" type="date" required>
+      </div>
+
+      <div class="field">
+        <label for="scheduled-time">Start time</label>
+        <input id="scheduled-time" name="time" type="time" required>
+      </div>
+
+      <div class="field">
+        <label for="scheduled-duration">Duration (minutes)</label>
+        <input
+          id="scheduled-duration"
+          name="duration"
+          type="number"
+          min="1"
+          max="1440"
+          value="30"
+          required
+        >
+      </div>
+
+      <div class="field full-width">
+        <label for="scheduled-notes">Notes (optional)</label>
+        <input
+          id="scheduled-notes"
+          name="notes"
+          maxlength="250"
+          placeholder="Equipment, location, or workout details"
+        >
+      </div>
+
+      <button class="button primary" type="submit">＋ Schedule workout</button>
+    </form>
+
+    <p id="planner-message" class="message" role="status" aria-live="polite"></p>
+
+    <div class="planner-summary">
+      <article class="stat-card">
+        <p>Planned sessions</p>
+        <strong id="planned-count">0</strong>
+      </article>
+      <article class="stat-card">
+        <p>Completed sessions</p>
+        <strong id="completed-count">0</strong>
+      </article>
+    </div>
+
+    <div class="section-heading planner-list-heading">
+      <div>
+        <h3>Upcoming workouts</h3>
+        <p class="muted">Your scheduled sessions and their current status.</p>
+      </div>
+    </div>
+
+    <div id="scheduled-workouts-list" class="scheduled-workouts-list">
+      <p class="muted">Your scheduled workouts will appear here.</p>
+    </div>
+  </section>
+    
+
 
       <section id="workouts" class="panel workout-panel" aria-labelledby="workouts-heading">
         <div class="section-heading"><div><h2 id="workouts-heading">Log a workout</h2><p class="muted">Record a session to keep your history up to date.</p></div></div>
