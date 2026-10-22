@@ -18,41 +18,41 @@ Install a current LTS version of Node.js and npm.
 1. Open this project folder in VS Code.
 2. Open the VS Code terminal in this folder.
 3. Install dependencies:
-   ```bash
+      bash
    npm install
-   ```
+   
 4. Start JSON Server in one terminal:
-   ```bash
+      bash
    npm run api
-   ```
+      
 5. In a second terminal, start the frontend:
-   ```bash
+      bash
    npm run dev
-   ```
+   
 6. Open the local URL printed by Vite (usually `http://localhost:5173`).
 
 The API runs at `http://localhost:3000`. Its initial data is in `db.json`. JSON Server writes changes back to this file while running locally.
 
 ## Tests and lint
-```bash
+   bash
 npm test
 npm run lint
 npm run build
-```
+   
 The Jest tests cover validation, workout summaries, filtering, goal progress, and chart rendering. Review the generated coverage report and add tests as features grow.
 
 ## API endpoints
-| Method | Endpoint | Purpose |
-|---|---|---|
-| GET | `/workouts` | List workouts |
-| POST | `/workouts` | Create a workout |
-| PUT | `/workouts/:id` | Replace a workout |
-| PATCH | `/workouts/:id` | Update part of a workout |
-| DELETE | `/workouts/:id` | Delete a workout |
-| GET | `/goals` | List goals |
-| POST | `/goals` | Create a goal |
-| PATCH | `/goals/:id` | Update a goal |
-| DELETE | `/goals/:id` | Delete a goal |
+ Method  Endpoint  Purpose 
+
+ GET | `/workouts` | List workouts 
+ POST | `/workouts` | Create a workout 
+ PUT | `/workouts/:id` | Replace a workout 
+ PATCH | `/workouts/:id` | Update part of a workout 
+  DELETE | `/workouts/:id` | Delete a workout 
+ GET | `/goals` | List goals |
+ POST | `/goals` | Create a goal |
+ PATCH | `/goals/:id` | Update a goal 
+ DELETE | `/goals/:id` | Delete a goal 
 
 ## Deployment notes
 GitHub Pages can host the built frontend, but it does not run JSON Server. Deploy the API separately to a host that supports a persistent JSON Server service or a suitable database-backed API. Set `window.FITTRACK_API_URL` to the deployed API base URL before the app module loads. Do not use a temporary or ephemeral API host if the assignment requires data to persist.
