@@ -15,7 +15,7 @@ The project was built to practice JavaScript, API integration, and front-end dev
 * Schedule workouts for specific days.
 * View workout reminders and planned activities.
 * Store and retrieve information through an API.
-* Use the application through a responsive interface.
+* Use the application through a responsive interface
 
 ## Technologies Used
 
