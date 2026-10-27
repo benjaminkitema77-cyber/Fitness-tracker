@@ -1,0 +1,34 @@
+{
+  "workouts": [
+    {
+      "id": "1",
+      "exercise": "Full body strength",
+      "category": "Strength",
+      "duration": 45,
+      "date": "2026-10-19",
+      "notes": "Sample workout"
+    },
+    {
+      "id": "2",
+      "exercise": "Morning run",
+      "category": "Cardio",
+      "duration": 30,
+      "date": "2026-10-18",
+      "notes": ""
+    }
+  ],
+  "goals": [
+    {
+      "id": "1",
+      "title": "Work out 4 times a week",
+      "target": 4,
+      "current": 0
+    },
+    {
+      "id": "2",
+      "title": "Reach 20 workout hours",
+      "target": 20,
+      "current": 0
+    }
+  ]
+}
