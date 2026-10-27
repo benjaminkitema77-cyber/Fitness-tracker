@@ -29,4 +29,4 @@ Build a personal fitness tracker that allows users to record workouts, review wo
 - Light neutral: `#F8FAFC`
 
 ## Current implementation notes
-This starter contains the initial local app structure and sample data. Test it locally, review the assignment rubric, and extend or adjust it before claiming every rubric item is complete. A persistent, publicly accessible deployed API still needs to be configured for a live deployment
+This starter contains the initial local app structure and sample data. Test it locally, review the assignment rubric, and extend or adjust it before claiming every rubric item is complete. A persistent, publicly accessible deployed API still needs to be configured for a live deployment.
