@@ -1,4 +1,4 @@
-# FitTrack – Fitness Tracker
+#  Fitness Tracker
 
 ## About the Project
 
