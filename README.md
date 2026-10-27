@@ -2,7 +2,7 @@
 
 ## About the Project
 
-FitTrack is a web application that helps users keep track of their workouts, set fitness goals, and plan their exercise routines. It allows users to record workout details, monitor their progress, and organize upcoming workouts.
+FitTrack is a web application that helps users keep track of their workouts, set fitness goals, and plan their exercise routines. It allows users to record workout details, monitor their progress, and organize upcoming workouts
 
 The project was built to practice JavaScript, API integration, and front-end development.
 
