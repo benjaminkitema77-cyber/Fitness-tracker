@@ -1,7 +1,8 @@
 // API module: all network requests are kept in one place.
-const API_BASE_URL = (typeof window !== "undefined" && window.FITTRACK_API_URL)
-  ? window.FITTRACK_API_URL.replace(/\/$/, "")
-  : "http://localhost:3000";
+const API_BASE_URL =
+  (typeof window !== "undefined" && window.FITTRACK_API_URL)
+    ? window.FITTRACK_API_URL.replace(/\/$/, "")
+    : "https://fittrack-api-benjamin.onrender.com";
 
 async function request(resource, options = {}) {
   let response;
