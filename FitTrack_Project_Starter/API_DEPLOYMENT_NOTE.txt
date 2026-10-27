@@ -1,4 +1,0 @@
-For local development, no extra configuration is needed. The app uses http://localhost:3000 by default.
-For a deployed frontend, set window.FITTRACK_API_URL in index.html before the module script, for example:
-<script>window.FITTRACK_API_URL = "https://YOUR-PERSISTENT-API-HOST";</script>
-Replace the example with your actual deployed API base URL. Do not include a trailing slash.
